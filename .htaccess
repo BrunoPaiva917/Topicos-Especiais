@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^([A-Za-z0-9]+)/([A-Za-z0-9]+)$ /app/index.php?key=$1&value=$2
+RewriteRule ^([A-Za-z0-9]+)/([A-Za-z0-9]+)/$ /app/index.php?key=$1&value=$2
+
+RewriteRule ^([A-Za-z0-9]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)$ /app/index.php?key=$1&value=$2&action=$3
+RewriteRule ^([A-Za-z0-9]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)/$ /app/index.php?key=$1&value=$2&action=$3
+
+RewriteRule ^([A-Za-z0-9]+)$ /app/index.php?menu=$1
+RewriteRule ^([A-Za-z0-9]+)/$ /app/index.php?menu=$1
+
+ 
